@@ -9,14 +9,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <bod>
-    <div class="h-[100vh] w-screen flex items-center gap-5 justify-evenly">
+    <div class="h-[100vh] w-screen flex items-center justify-center duration-200">
       <div
-        class="h-[600px] w-[300px] border-[6px] border-black rounded-3xl flex justify-center flex-col items-center bg-[#313131] gap-[50px] shadow-2xl ">
+        class="h-[650px] lg:h-[650px] w-[300px] md:w-[400px] border-[6px] gap-[32px] border-black rounded-3xl flex justify-center flex-col items-center bg-[#313131] shadow-2xl ">
         <!-- Display -->
-        <input class="h-[200px] w-[268px] bg-slate-50 rounded-xl p-4 text-[64px] text-end" size="50" id="display" placeholder="0" type="text" disabled></input>
+        <input class="h-[200px] w-[268px] md:w-[368px] bg-slate-50 rounded-xl p-4 mt-[-50px] text-[64px] text-end" id="display" placeholder="0" type="text" disabled></input>
 
         <!-- Buttons -->
-        <div class="grid grid-cols-4 items-center h-[300px] w-[268px] text-2xl gap-2">
+        <div class="grid grid-cols-4 items-center h-[300px] w-[268px] md:w-[368px] text-2xl gap-2">
           <button class="py-4 bg-[#525252] rounded-md hover:bg-[#1a1a1a]" onclick="deleteLeft()"><i class="fa-solid fa-delete-left text-[#FFA500]"></i></button>
           <button class="py-4 bg-[#525252] text-[#FFA500] rounded-md hover:bg-[#1a1a1a]" onclick="ClearValue()">CE</button>
           <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('%')">%</button>
@@ -35,7 +35,7 @@
           <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('+')">+</button>
           <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('0')">0</button>
           <button class="py-4 bg-[#525252] text-slate-50 rounded-md hover:bg-[#1a1a1a]" onclick="displayNum('.')">.</button>
-          <button class="py-4 w-[132px] bg-[#FFA500]  text-slate-50 rounded-md hover:bg-[#FFB328]" onclick="Calculate()">=</button>
+          <button class="py-4 w-[132px] md:w-[180px] bg-[#FFA500]  text-slate-50 rounded-md hover:bg-[#FFB328]" onclick="Calculate()">=</button>
         </div>
       </div>
 
